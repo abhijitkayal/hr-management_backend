@@ -8,7 +8,7 @@ try {
   console.log('DEBUG: models list error', e.message);
 }
 
-const Payment = require("../models/payment");
+const Payment = require("../models/Payment");
 
 // CREATE PAYMENT
 exports.createPayment = async (req, res) => {
