@@ -24,7 +24,7 @@
 
 const express = require("express");
 const router = express.Router();
-const Client = require("../models/client");
+const Client = require("../models/Client");
 
 /* ===================== CREATE CLIENT ===================== */
 router.post("/", async (req, res) => {
