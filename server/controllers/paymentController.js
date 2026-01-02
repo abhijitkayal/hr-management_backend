@@ -1,3 +1,13 @@
+const fs = require('fs');
+const path = require('path');
+console.log('DEBUG: payment controller __dirname', __dirname);
+try {
+  console.log('DEBUG: models list', fs.readdirSync(path.resolve(__dirname, '../models')));
+  console.log('DEBUG: payment exists', fs.existsSync(path.resolve(__dirname, '../models/payment.js')));
+} catch (e) {
+  console.log('DEBUG: models list error', e.message);
+}
+
 const Payment = require("../models/payment");
 
 // CREATE PAYMENT
